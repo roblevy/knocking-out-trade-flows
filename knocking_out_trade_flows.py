@@ -17,16 +17,10 @@ file = '../../gdm.test'
 model = global_demo_model.GlobalDemoModel.from_pickle(file)
 
 #%%
-def global_gdp(model):
-    ggdp = 0    
-    for name, country in model.countries.iteritems():
-        ggdp += country.x.sum();
-    return ggdp
-
-#%%
 # Initialise
-init_ggdp = global_gdp(model)
-ggdpdelta = pd.DataFrame(columns=['sector','from_iso3','to_iso3','ggdpdelta'])
+# GGO is Gross Global Output
+init_ggo = model.gross_output().sum()
+ggodelta = pd.DataFrame(columns=['sector','from_iso3','to_iso3','ggodelta'])
   
 for sector in model.sectors:
     P = model._import_propensities[sector]
@@ -42,14 +36,14 @@ for sector in model.sectors:
                 P_i_new = P_i_new * (1 / P_i_new.sum())
                 model._import_propensities[sector][to_iso3] = P_i_new
                 model.recalculate_world()
-                new_ggdp = global_gdp(model)
-                gdp_delta = {'sector':sector,
+                new_ggo = model.gross_output().sum()
+                go_delta = {'sector':sector,
                              'from_iso3':from_iso3,
                              'to_iso3':to_iso3,
-                             'ggdpdelta':init_ggdp - new_ggdp}
-                ggdpdelta = ggdpdelta.append(gdp_delta,ignore_index=True)                           
+                             'ggodelta':init_ggo - new_ggo}
+                ggodelta = ggodelta.append(go_delta,ignore_index=True)                           
                 model = global_demo_model.GlobalDemoModel.from_pickle(file)
             else:
                 print 'trade propensities are all zero'
-    ggdpdelta.to_csv('ggdpdelta.csv',index=False)
-ggdpdelta.to_csv('ggdpdelta.csv',index=False)
+    ggodelta.to_csv('ggodelta.csv',index=False)
+ggodelta.to_csv('ggodelta.csv',index=False)

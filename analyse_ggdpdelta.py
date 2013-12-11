@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 sys.path.insert(0, config.demo_model_dir)
 import global_demo_model
-
+reload (global_demo_model)
 #%%
 # Get the data
 data = pd.read_csv('ggdpdelta.csv')
@@ -45,7 +45,7 @@ import matplotlib.pyplot as plt
 to_plot = pgdpd.unstack('sector')
 
 fig = plt.figure()
-plot = to_plot[np.abs(to_plot) > 0.1].boxplot(rot=90, sym='o')
+plot = to_plot.boxplot(rot=90, sym='o')
 setp(plot['fliers'], color='b')
 setp(plot['fliers'], linewidth=0)
 setp(plot['fliers'], alpha=0.2)
