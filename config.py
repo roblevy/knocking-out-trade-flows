@@ -11,4 +11,6 @@ config = ConfigParser.SafeConfigParser()
 config.read('config.cfg')
 
 datadir = config.get('data','data_basedir')
-csv_file = config.get('data','csv_file')    
+csv_file = config.get('data','csv_file')
+demo_model_dir = config.get('demomodel','demo_model_dir')
+gdm_datadir = config.get('data','gdm_datadir')
