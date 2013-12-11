@@ -13,12 +13,12 @@ import global_demo_model
 reload (global_demo_model)
 #%%
 # Get the data
-data = pd.read_csv('ggdpdelta.csv')
+data = pd.read_csv('ggodelta.csv')
 file = '../../gdm.test'
 model = global_demo_model.GlobalDemoModel.from_pickle(file)
 
 #%%
-# Prepare the ggdpdelta data
+# Prepare the ggodelta data
 d = data.set_index(['sector','from_iso3','to_iso3']).squeeze()
 #%%
 # Prepare the model data
@@ -32,26 +32,27 @@ flows.columns.name = 'sector'
 flows = flows.stack()
 flows = flows.reorder_levels([2, 0, 1])
 flows = flows.sort_index()
+
 #%%
-# Calculate the GDP delta as a proportion of the original
-# flows size. (Proportional GDP Delta, pgdpd)
-pgdpd = (d / flows).dropna()
+# Calculate the Gross Output delta as a proportion of the original
+# flows size. (Proportional Delta Gross Output, pdgo)
+pdgo = (d / flows).dropna()
 
 #%%
 # Plot
 from matplotlib.artist import setp
 import matplotlib.pyplot as plt
 
-to_plot = pgdpd.unstack('sector')
+to_plot = pdgo.unstack('sector')
 
 fig = plt.figure()
 plot = to_plot.boxplot(rot=90, sym='o')
 setp(plot['fliers'], color='b')
 setp(plot['fliers'], linewidth=0)
 setp(plot['fliers'], alpha=0.2)
-fig.suptitle('Change in Global GDP as fraction of flow size')
+fig.suptitle('Change in Global Gross Output as fraction of flow size')
 plt.xlabel('Sector')
-plt.ylabel('$\Delta$GDP / flow size')
+plt.ylabel('$\Delta$Gross Output / flow size')
 
 #%%
 fig = plt.figure()
@@ -60,6 +61,6 @@ plot = to_plot[np.abs(to_plot) > 100].boxplot(rot=90, sym='o')
 setp(plot['fliers'], color='r')
 setp(plot['fliers'], linewidth=0)
 setp(plot['fliers'], alpha=0.2)
-fig.suptitle('Change in Global GDP')
+fig.suptitle('Change in Global Gross Output')
 plt.xlabel('Sector')
-plt.ylabel('$\Delta$GDP')
+plt.ylabel('$\Delta$Gross Output')
