@@ -40,7 +40,7 @@ for sector in model.sectors:
                 go_delta = {'sector':sector,
                              'from_iso3':from_iso3,
                              'to_iso3':to_iso3,
-                             'ggodelta':init_ggo - new_ggo}
+                             'ggodelta':new_ggo - init_ggo}
                 ggodelta = ggodelta.append(go_delta,ignore_index=True)                           
                 model = global_demo_model.GlobalDemoModel.from_pickle(file)
             else:
