@@ -20,7 +20,7 @@ model = global_demo_model.GlobalDemoModel.from_pickle(file)
 # Initialise
 # GGO is Gross Global Output
 init_ggo = model.gross_output().sum()
-ggodelta = pd.DataFrame(columns=['sector','from_iso3','to_iso3','ggodelta'])
+dggo = pd.DataFrame(columns=['sector','from_iso3','to_iso3','dggo'])
   
 for sector in model.sectors:
     P = model._import_propensities[sector]
@@ -40,10 +40,10 @@ for sector in model.sectors:
                 go_delta = {'sector':sector,
                              'from_iso3':from_iso3,
                              'to_iso3':to_iso3,
-                             'ggodelta':new_ggo - init_ggo}
-                ggodelta = ggodelta.append(go_delta,ignore_index=True)                           
+                             'dggo':new_ggo - init_ggo}
+                dggo = dggo.append(go_delta,ignore_index=True)                           
                 model = global_demo_model.GlobalDemoModel.from_pickle(file)
             else:
                 print 'trade propensities are all zero'
-    ggodelta.to_csv('ggodelta.csv',index=False)
-ggodelta.to_csv('ggodelta.csv',index=False)
+    dggo.to_csv('dggo.csv',index=False)
+dggo.to_csv('dggo.csv',index=False)

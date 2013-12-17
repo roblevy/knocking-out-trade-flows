@@ -19,14 +19,6 @@ file = '../../gdm.test'
 model = global_demo_model.GlobalDemoModel.from_pickle(file)
 
 #%%
-# Prepare the ggodelta data. GGO = Global Gross Output
-initial_ggo = model.gross_output().sum()
-data['new_ggo'] = data['ggodelta'] + initial_ggo
-d = data.set_index(['sector','from_iso3','to_iso3'])
-dggo = d['ggodelta'].squeeze() # Delta Global Gross Output
-new_ggo  = d['new_ggo'].squeeze()
-
-#%%
 # Prepare the model data
 flows = {}
 for s in model.sectors:
@@ -40,33 +32,81 @@ flows = flows.reorder_levels([2, 0, 1])
 flows = flows.sort_index()
 
 #%%
-# Calculate the Gross Output delta as a proportion of the original
-# flows size. (Proportional Delta Gross Output, pdgo)
-pdgo = (dggo / flows).dropna()
+# Prepare the dggo data. GGO = Global Gross Output
+# LOOK: Only flows > $1000 are included!
+initial_ggo = model.gross_output().sum()
+data['new_ggo'] = data['dggo'] + initial_ggo
+d = data.set_index(['sector','from_iso3','to_iso3'])
+d['flow_value'] = flows
+d = d[d.flow_value > 1000]
+d['pdggo'] = d.dggo / d.flow_value
+dggo = d['dggo'].copy().squeeze() # Delta Global Gross Output
+new_ggo  = d['new_ggo'].squeeze()
 
 #%%
-# Plot cumulative distributions
+# Calculate the Gross Output delta as a proportion of the original
+# flows size. (Proportional Delta Global Gross Output, pdggo)
+pdggo = d.pdggo.dropna()
+
+#%%
+# Top ten
+print "Top 10 pdggo (positive):"
+pdggo.sort()
+print pd.DataFrame(pdggo).head(10).reset_index().to_latex(index=False)
+
+print "Top 10 pdggo (negative)"
+pdggo.sort(ascending=False)
+print pd.DataFrame(pdggo).head(10).reset_index().to_latex(index=False)
+
+print "Top 10 dggo (positive)"
+dggo.sort()
+print pd.DataFrame(dggo).head(10).reset_index().to_latex(index=False)
+
+print "Top 10 pdggo (negative)"
+dggo.sort(ascending=False)
+print pd.DataFrame(dggo).head(10).reset_index().to_latex(index=False)
+
+#%%
+# Plot log cumulative distributions
+# Seperate positive and negative values
 from matplotlib.artist import setp
 import matplotlib.pyplot as plt
-df_dggo = dggo.reset_index()
-df_dggo = df_dggo[(df_dggo.from_iso3 != 'RoW') & (df_dggo.to_iso3 != 'RoW')]
-g = df_dggo.groupby('sector')
-df_dggo['rank'] = g['ggodelta'].transform(pd.Series.rank)
-df_dggo['n'] = g['ggodelta'].transform(len)
-df_dggo['p'] = df_dggo['rank'] / df_dggo.n
-df_dggo = df_dggo.sort(['sector','p'])
-ag = df_dggo[df_dggo.sector == 'Agriculture'].sort('p')
-plt.plot(ag.ggodelta, ag.p)
+from numpy import linspace
+d['pos'] = d.dggo > 0
+d['ldggo'] = np.log10(d[d.pos]['dggo'])
+d['ldggo'][~d.pos] = np.log10(-d[~d.pos]['dggo'])
+g = d.groupby('pos')
+d['rank'] = g['ldggo'].transform(pd.Series.rank)
+d['n'] = g['ldggo'].transform(len)
+d['p'] = d['rank'] / d.n
+
+plt.figure()
+pos = d[d.pos].sort(['dggo'])
+plt.suptitle('positive dggo log cum dist')
+for s in pos.index.levels[0].values:
+    plt.plot(pos.ix[s].ldggo, pos.ix[s]['p'])
+plt.plot(pos.ldggo, pos.ix[s]['p'], 'r')
+
+plt.figure()
+neg = d[~d.pos].sort(['ldggo'])
+plt.suptitle('negative dggo log cum dist')
+for s in neg.index.levels[0].values:
+    plt.plot(neg.ix[s].ldggo, neg.ix[s]['p'])
+plt.plot(neg.ldggo, neg.p, 'g')
+
+plt.figure()
+plt.scatter(d.ldggo, np.log10(d.flow_value))
+
 #%%
 # Plot
-to_plot = pdgo.unstack('sector')
+to_plot = pdggo.unstack('sector')
 
-fig = plt.figure()
+plt.figure()
 plot = to_plot.boxplot(rot=90, sym='o')
 setp(plot['fliers'], color='b')
 setp(plot['fliers'], linewidth=0)
 setp(plot['fliers'], alpha=0.2)
-fig.suptitle('Change in Global Gross Output as fraction of flow size')
+plt.suptitle('Change in Global Gross Output as fraction of flow size')
 plt.xlabel('Sector')
 plt.ylabel('$\Delta$Gross Output / flow size')
 
@@ -110,8 +150,8 @@ from numpy import linspace
 import matplotlib.pyplot as plt
 plt.figure()
 x = linspace(-2,2,100)
-pdf_all_sectors = gaussian_kde(pdgo)
-normal = np.random.normal(scale=pdgo.std(), size=len(pdgo))
+pdf_all_sectors = gaussian_kde(pdggo)
+normal = np.random.normal(scale=pdggo.std(), size=len(pdggo))
 pdf_normal = gaussian_kde(normal)
 plt.rc('text', usetex=True)
 #plt.rc('text.latex', preamble = \
@@ -123,10 +163,10 @@ plt.title('Kernel Density Estimation of Proportional Change in Global Gross Outp
 plt.xlabel(r'$\frac{\Delta GGO}{flow value}$')
 #%%
 # Kernel density estimations per sector
-#sectors = pdgo.index.levels[0].values
+#sectors = pdggo.index.levels[0].values
 sectors = ['Agriculture', 'Manufacturing', 'Business Services', 'Financial Services']
 for s in sectors:
-    samp = pdgo.ix[s].values
+    samp = pdggo.ix[s].values
     try:
         fail = False
         pdf = gaussian_kde(samp)

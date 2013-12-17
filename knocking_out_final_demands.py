@@ -20,7 +20,7 @@ model = global_demo_model.GlobalDemoModel.from_pickle(file)
 # Initialise
 # GGO is Gross Global Output
 init_ggo = model.gross_output().sum()
-ggodelta = pd.DataFrame(columns=['country', 'sector','ggodelta'])
+ggodelta = pd.DataFrame(columns=['country_iso3', 'sector','ggodelta'])
   
 for country_name, country in model.countries.iteritems():
     for sector in model.sectors:
@@ -28,7 +28,7 @@ for country_name, country in model.countries.iteritems():
         model.set_final_demand(country_name, sector, 0)
         print "%s: %s" % (country_name, sector)
         new_ggo = model.gross_output().sum()
-        go_delta = {'country':country_name,
+        go_delta = {'country_iso3':country_name,
                     'sector':sector,
                     'ggodelta':new_ggo - init_ggo}
         ggodelta = ggodelta.append(go_delta,ignore_index=True)                           
