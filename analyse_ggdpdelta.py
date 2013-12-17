@@ -94,8 +94,24 @@ for s in neg.index.levels[0].values:
     plt.plot(neg.ix[s].ldggo, neg.ix[s]['p'])
 plt.plot(neg.ldggo, neg.p, 'g')
 
+#%%
+# Scatter plot flow_value against $Delta$GDP
+# on a log-log scale
 plt.figure()
-plt.scatter(d.ldggo, np.log10(d.flow_value))
+sectors = d.index.get_level_values(0).values
+d['sector_number'] = pd.factorize(sectors)[0]
+cm = plt.cm.get_cmap('RdYlBu')
+plt.scatter(d.ldggo, np.log10(d.flow_value), 
+            c=d.sector_number, vmin=0, vmax=34, cmap=cm,
+            alpha=0.7, lw=0, s=5)
+plt.suptitle(r'flow value (\$) versus $\Delta GGO$ (log-log scale)')
+plt.xlabel(r'$log_{10}(flow value)$')
+plt.ylabel(r'$log_{10}(\Delta GGO)$')
+plt.figure()
+plt.scatter(d.dggo, d.flow_value, 
+            c=d.sector_number, vmin=0, vmax=34, cmap=cm,
+            alpha=0.7, lw=0, s=20)
+plt.suptitle('flow value (\$) versus $\Delta GGO$')
 
 #%%
 # Plot
