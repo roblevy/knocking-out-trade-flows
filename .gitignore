@@ -1,6 +1,5 @@
 *.spyder*
 *.pyc
-*.csv
 Visuals/
 #################
 ## Eclipse

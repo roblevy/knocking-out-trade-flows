@@ -1,0 +1,1436 @@
+country_iso3,sector,ggodelta
+USA,Agriculture,-146580
+USA,Mining,-10988
+USA,Food,-1178217
+USA,Textiles,-222239
+USA,Leather,-49164
+USA,Wood,-12685
+USA,Paper,-198260
+USA,Fuel,-469319
+USA,Chemicals,-493501
+USA,Plastics,-75263
+USA,Minerals,-23245
+USA,Metals,-96415
+USA,Machinery,-104412
+USA,Electricals,-202767
+USA,Vehicles,-473570
+USA,Manufacturing,-179957
+USA,Utilities,-337123
+USA,Construction,-255
+USA,Vehicle Trade,-309638
+USA,Wholesale Trade,-611299
+USA,Retail Trade,-1560701
+USA,Hospitality,-1128318
+USA,Inland Transport,-194293
+USA,Water Transport,-30269
+USA,Air Transport,-179358
+USA,Transport Services,-26579
+USA,Communications,-414009
+USA,Financial Services,-1550971
+USA,Real Estate,-2213392
+USA,Business Services,-466382
+USA,Public Services,-4792761
+USA,Education,-304953
+USA,Health,-2653686
+USA,Other Services,-1011850
+USA,Private Households,-14743
+LUX,Agriculture,-744
+LUX,Mining,-2
+LUX,Food,-3394
+LUX,Textiles,-844
+LUX,Leather,-161
+LUX,Wood,-18
+LUX,Paper,-685
+LUX,Fuel,-1109
+LUX,Chemicals,-1324
+LUX,Plastics,-428
+LUX,Minerals,-137
+LUX,Metals,-448
+LUX,Machinery,-340
+LUX,Electricals,-419
+LUX,Vehicles,-2669
+LUX,Manufacturing,-644
+LUX,Utilities,-860
+LUX,Construction,-239
+LUX,Vehicle Trade,-756
+LUX,Wholesale Trade,-3246
+LUX,Retail Trade,-2610
+LUX,Hospitality,-2292
+LUX,Inland Transport,-727
+LUX,Water Transport,-19
+LUX,Air Transport,-120
+LUX,Transport Services,-142
+LUX,Communications,-488
+LUX,Financial Services,-1153
+LUX,Real Estate,-3796
+LUX,Business Services,-363
+LUX,Public Services,-5034
+LUX,Education,-2393
+LUX,Health,-4772
+LUX,Other Services,-1128
+LUX,Private Households,-194
+SWE,Agriculture,-6818
+SWE,Mining,-173
+SWE,Food,-39226
+SWE,Textiles,-5826
+SWE,Leather,-1139
+SWE,Wood,-1604
+SWE,Paper,-7859
+SWE,Fuel,-9819
+SWE,Chemicals,-12364
+SWE,Plastics,-2371
+SWE,Minerals,-1634
+SWE,Metals,-2834
+SWE,Machinery,-4795
+SWE,Electricals,-9042
+SWE,Vehicles,-24082
+SWE,Manufacturing,-7254
+SWE,Utilities,-13000
+SWE,Construction,-594
+SWE,Vehicle Trade,-6192
+SWE,Wholesale Trade,-20756
+SWE,Retail Trade,-12571
+SWE,Hospitality,-19234
+SWE,Inland Transport,-8341
+SWE,Water Transport,-675
+SWE,Air Transport,-3229
+SWE,Transport Services,-16489
+SWE,Communications,-11536
+SWE,Financial Services,-15581
+SWE,Real Estate,-66920
+SWE,Business Services,-12456
+SWE,Public Services,-52070
+SWE,Education,-49104
+SWE,Health,-89781
+SWE,Other Services,-37439
+SWE,Private Households,-155
+DEU,Agriculture,-56247
+DEU,Mining,-14824
+DEU,Food,-349742
+DEU,Textiles,-67705
+DEU,Leather,-15058
+DEU,Wood,-5515
+DEU,Paper,-80186
+DEU,Fuel,-106241
+DEU,Chemicals,-126676
+DEU,Plastics,-24204
+DEU,Minerals,-16049
+DEU,Metals,-32473
+DEU,Machinery,-53136
+DEU,Electricals,-79799
+DEU,Vehicles,-244241
+DEU,Manufacturing,-68373
+DEU,Utilities,-107274
+DEU,Construction,-14486
+DEU,Vehicle Trade,-61303
+DEU,Wholesale Trade,-160844
+DEU,Retail Trade,-158602
+DEU,Hospitality,-149810
+DEU,Inland Transport,-43552
+DEU,Water Transport,-9457
+DEU,Air Transport,-37041
+DEU,Transport Services,-31291
+DEU,Communications,-89501
+DEU,Financial Services,-219864
+DEU,Real Estate,-405662
+DEU,Business Services,-52566
+DEU,Public Services,-370968
+DEU,Education,-205430
+DEU,Health,-482145
+DEU,Other Services,-211191
+DEU,Private Households,-10661
+IDN,Agriculture,-52151
+IDN,Mining,-52
+IDN,Food,-104996
+IDN,Textiles,-20815
+IDN,Leather,-3978
+IDN,Wood,-34
+IDN,Paper,-2981
+IDN,Fuel,-3961
+IDN,Chemicals,-19269
+IDN,Plastics,-6263
+IDN,Minerals,-1045
+IDN,Metals,-299
+IDN,Machinery,-2694
+IDN,Electricals,-23043
+IDN,Vehicles,-40011
+IDN,Manufacturing,-7533
+IDN,Utilities,-9153
+IDN,Construction,-26
+IDN,Vehicle Trade,0
+IDN,Wholesale Trade,-43688
+IDN,Retail Trade,-29355
+IDN,Hospitality,-26950
+IDN,Inland Transport,-20161
+IDN,Water Transport,-8743
+IDN,Air Transport,-2214
+IDN,Transport Services,-1992
+IDN,Communications,-11312
+IDN,Financial Services,-13822
+IDN,Real Estate,-3403
+IDN,Business Services,-18623
+IDN,Public Services,-46576
+IDN,Education,-29289
+IDN,Health,-4486
+IDN,Other Services,-42959
+IDN,Private Households,0
+BGR,Agriculture,-3265
+BGR,Mining,-191
+BGR,Food,-11575
+BGR,Textiles,-1815
+BGR,Leather,-549
+BGR,Wood,-76
+BGR,Paper,-631
+BGR,Fuel,-2052
+BGR,Chemicals,-1932
+BGR,Plastics,-257
+BGR,Minerals,-157
+BGR,Metals,-602
+BGR,Machinery,-614
+BGR,Electricals,-1021
+BGR,Vehicles,-990
+BGR,Manufacturing,-795
+BGR,Utilities,-2002
+BGR,Construction,-805
+BGR,Vehicle Trade,-635
+BGR,Wholesale Trade,-1836
+BGR,Retail Trade,-1365
+BGR,Hospitality,-2968
+BGR,Inland Transport,-1938
+BGR,Water Transport,-7
+BGR,Air Transport,-165
+BGR,Transport Services,-258
+BGR,Communications,-2953
+BGR,Financial Services,-639
+BGR,Real Estate,-11041
+BGR,Business Services,-217
+BGR,Public Services,-6670
+BGR,Education,-3030
+BGR,Health,-3476
+BGR,Other Services,-3629
+BGR,Private Households,0
+GBR,Agriculture,-112590
+GBR,Mining,-2419
+GBR,Food,-177195
+GBR,Textiles,-55037
+GBR,Leather,-9730
+GBR,Wood,-6981
+GBR,Paper,-47355
+GBR,Fuel,-35021
+GBR,Chemicals,-47051
+GBR,Plastics,-16964
+GBR,Minerals,-9617
+GBR,Metals,-18555
+GBR,Machinery,-31979
+GBR,Electricals,-45989
+GBR,Vehicles,-124968
+GBR,Manufacturing,-46649
+GBR,Utilities,-146121
+GBR,Construction,-30114
+GBR,Vehicle Trade,-87497
+GBR,Wholesale Trade,-143558
+GBR,Retail Trade,-210207
+GBR,Hospitality,-254299
+GBR,Inland Transport,-59564
+GBR,Water Transport,-4589
+GBR,Air Transport,-55991
+GBR,Transport Services,-9602
+GBR,Communications,-62280
+GBR,Financial Services,-255499
+GBR,Real Estate,-350682
+GBR,Business Services,-37573
+GBR,Public Services,-373179
+GBR,Education,-201698
+GBR,Health,-658385
+GBR,Other Services,-204077
+GBR,Private Households,-11060
+CAN,Agriculture,-27641
+CAN,Mining,-6419
+CAN,Food,-143713
+CAN,Textiles,-31150
+CAN,Leather,-6454
+CAN,Wood,-2673
+CAN,Paper,-20130
+CAN,Fuel,-40838
+CAN,Chemicals,-29392
+CAN,Plastics,-9565
+CAN,Minerals,-3816
+CAN,Metals,-8635
+CAN,Machinery,-16836
+CAN,Electricals,-28975
+CAN,Vehicles,-124291
+CAN,Manufacturing,-24886
+CAN,Utilities,-23474
+CAN,Construction,-417
+CAN,Vehicle Trade,-4783
+CAN,Wholesale Trade,-49103
+CAN,Retail Trade,-74280
+CAN,Hospitality,-82745
+CAN,Inland Transport,-34002
+CAN,Water Transport,-2392
+CAN,Air Transport,-15586
+CAN,Transport Services,-8666
+CAN,Communications,-26988
+CAN,Financial Services,-145463
+CAN,Real Estate,-163896
+CAN,Business Services,-24748
+CAN,Public Services,-335701
+CAN,Education,-103776
+CAN,Health,-112905
+CAN,Other Services,-113646
+CAN,Private Households,-1860
+KOR,Agriculture,-25003
+KOR,Mining,-277
+KOR,Food,-98516
+KOR,Textiles,-37807
+KOR,Leather,-8340
+KOR,Wood,-263
+KOR,Paper,-9954
+KOR,Fuel,-41351
+KOR,Chemicals,-15999
+KOR,Plastics,-3499
+KOR,Minerals,-946
+KOR,Metals,-4021
+KOR,Machinery,-13271
+KOR,Electricals,-34656
+KOR,Vehicles,-35542
+KOR,Manufacturing,-7970
+KOR,Utilities,-34317
+KOR,Construction,-33
+KOR,Vehicle Trade,-11188
+KOR,Wholesale Trade,-14559
+KOR,Retail Trade,-84216
+KOR,Hospitality,-91722
+KOR,Inland Transport,-36797
+KOR,Water Transport,-894
+KOR,Air Transport,-4779
+KOR,Transport Services,-3314
+KOR,Communications,-36030
+KOR,Financial Services,-59248
+KOR,Real Estate,-72938
+KOR,Business Services,-5645
+KOR,Public Services,-128535
+KOR,Education,-95950
+KOR,Health,-122812
+KOR,Other Services,-87658
+KOR,Private Households,0
+CYP,Agriculture,-808
+CYP,Mining,-4
+CYP,Food,-3525
+CYP,Textiles,-907
+CYP,Leather,-194
+CYP,Wood,-76
+CYP,Paper,-542
+CYP,Fuel,-89
+CYP,Chemicals,-878
+CYP,Plastics,-222
+CYP,Minerals,-209
+CYP,Metals,-351
+CYP,Machinery,-306
+CYP,Electricals,-176
+CYP,Vehicles,-1908
+CYP,Manufacturing,-502
+CYP,Utilities,-814
+CYP,Construction,-147
+CYP,Vehicle Trade,-531
+CYP,Wholesale Trade,-1222
+CYP,Retail Trade,-1283
+CYP,Hospitality,-5116
+CYP,Inland Transport,-322
+CYP,Water Transport,0
+CYP,Air Transport,-385
+CYP,Transport Services,-270
+CYP,Communications,-425
+CYP,Financial Services,-1333
+CYP,Real Estate,-4804
+CYP,Business Services,-261
+CYP,Public Services,-4505
+CYP,Education,-1747
+CYP,Health,-2028
+CYP,Other Services,-1846
+CYP,Private Households,-198
+BEL,Agriculture,-8824
+BEL,Mining,-221
+BEL,Food,-51977
+BEL,Textiles,-9894
+BEL,Leather,-1583
+BEL,Wood,-832
+BEL,Paper,-8698
+BEL,Fuel,-18943
+BEL,Chemicals,-18115
+BEL,Plastics,-1960
+BEL,Minerals,-2058
+BEL,Metals,-2464
+BEL,Machinery,-5081
+BEL,Electricals,-6916
+BEL,Vehicles,-18766
+BEL,Manufacturing,-8640
+BEL,Utilities,-13672
+BEL,Construction,-3232
+BEL,Vehicle Trade,-13812
+BEL,Wholesale Trade,-28224
+BEL,Retail Trade,-17287
+BEL,Hospitality,-21940
+BEL,Inland Transport,-8149
+BEL,Water Transport,-99
+BEL,Air Transport,-1312
+BEL,Transport Services,-19756
+BEL,Communications,-10627
+BEL,Financial Services,-34017
+BEL,Real Estate,-59942
+BEL,Business Services,-12564
+BEL,Public Services,-59709
+BEL,Education,-37397
+BEL,Health,-80796
+BEL,Other Services,-25054
+BEL,Private Households,-756
+HUN,Agriculture,-7141
+HUN,Mining,-173
+HUN,Food,-25617
+HUN,Textiles,-3328
+HUN,Leather,-1212
+HUN,Wood,-106
+HUN,Paper,-3048
+HUN,Fuel,-7248
+HUN,Chemicals,-8571
+HUN,Plastics,-877
+HUN,Minerals,-559
+HUN,Metals,-1435
+HUN,Machinery,-2565
+HUN,Electricals,-4797
+HUN,Vehicles,-11023
+HUN,Manufacturing,-2925
+HUN,Utilities,-12014
+HUN,Construction,-1001
+HUN,Vehicle Trade,-2424
+HUN,Wholesale Trade,-6110
+HUN,Retail Trade,-6489
+HUN,Hospitality,-9265
+HUN,Inland Transport,-4518
+HUN,Water Transport,-33
+HUN,Air Transport,-1137
+HUN,Transport Services,-1433
+HUN,Communications,-3624
+HUN,Financial Services,-4993
+HUN,Real Estate,-14954
+HUN,Business Services,-2035
+HUN,Public Services,-20708
+HUN,Education,-10162
+HUN,Health,-14621
+HUN,Other Services,-11155
+HUN,Private Households,0
+PRT,Agriculture,-9226
+PRT,Mining,-28
+PRT,Food,-35162
+PRT,Textiles,-12377
+PRT,Leather,-3605
+PRT,Wood,-680
+PRT,Paper,-4359
+PRT,Fuel,-5916
+PRT,Chemicals,-12375
+PRT,Plastics,-2124
+PRT,Minerals,-1040
+PRT,Metals,-1796
+PRT,Machinery,-2851
+PRT,Electricals,-4979
+PRT,Vehicles,-15167
+PRT,Manufacturing,-7348
+PRT,Utilities,-11315
+PRT,Construction,-800
+PRT,Vehicle Trade,-10165
+PRT,Wholesale Trade,-16355
+PRT,Retail Trade,-11611
+PRT,Hospitality,-29126
+PRT,Inland Transport,-4042
+PRT,Water Transport,-87
+PRT,Air Transport,-1728
+PRT,Transport Services,-2968
+PRT,Communications,-10013
+PRT,Financial Services,-13581
+PRT,Real Estate,-21400
+PRT,Business Services,-5661
+PRT,Public Services,-33286
+PRT,Education,-19380
+PRT,Health,-35364
+PRT,Other Services,-17043
+PRT,Private Households,-1969
+POL,Agriculture,-34057
+POL,Mining,-3389
+POL,Food,-96675
+POL,Textiles,-11979
+POL,Leather,-4717
+POL,Wood,-2372
+POL,Paper,-10353
+POL,Fuel,-11683
+POL,Chemicals,-27849
+POL,Plastics,-2850
+POL,Minerals,-4850
+POL,Metals,-3904
+POL,Machinery,-6624
+POL,Electricals,-10367
+POL,Vehicles,-14302
+POL,Manufacturing,-8159
+POL,Utilities,-25413
+POL,Construction,-31851
+POL,Vehicle Trade,-16104
+POL,Wholesale Trade,-28819
+POL,Retail Trade,-37185
+POL,Hospitality,-15959
+POL,Inland Transport,-20106
+POL,Water Transport,-372
+POL,Air Transport,-775
+POL,Transport Services,-8705
+POL,Communications,-19572
+POL,Financial Services,-38020
+POL,Real Estate,-78961
+POL,Business Services,-11121
+POL,Public Services,-57266
+POL,Education,-36591
+POL,Health,-42274
+POL,Other Services,-41000
+POL,Private Households,-2563
+NLD,Agriculture,-12331
+NLD,Mining,-162
+NLD,Food,-61945
+NLD,Textiles,-11380
+NLD,Leather,-1952
+NLD,Wood,-2752
+NLD,Paper,-16811
+NLD,Fuel,-17999
+NLD,Chemicals,-25257
+NLD,Plastics,-4039
+NLD,Minerals,-2666
+NLD,Metals,-5128
+NLD,Machinery,-6735
+NLD,Electricals,-10438
+NLD,Vehicles,-23766
+NLD,Manufacturing,-16455
+NLD,Utilities,-34417
+NLD,Construction,-4669
+NLD,Vehicle Trade,-16834
+NLD,Wholesale Trade,-51693
+NLD,Retail Trade,-24900
+NLD,Hospitality,-34167
+NLD,Inland Transport,-15898
+NLD,Water Transport,-1468
+NLD,Air Transport,-4296
+NLD,Transport Services,-14424
+NLD,Communications,-22135
+NLD,Financial Services,-61995
+NLD,Real Estate,-80755
+NLD,Business Services,-22374
+NLD,Public Services,-137776
+NLD,Education,-51715
+NLD,Health,-127103
+NLD,Other Services,-41731
+NLD,Private Households,-3157
+ROU,Agriculture,-22247
+ROU,Mining,-43
+ROU,Food,-34031
+ROU,Textiles,-2929
+ROU,Leather,-926
+ROU,Wood,-535
+ROU,Paper,-1442
+ROU,Fuel,-7273
+ROU,Chemicals,-1942
+ROU,Plastics,-369
+ROU,Minerals,-2099
+ROU,Metals,-988
+ROU,Machinery,-842
+ROU,Electricals,-1139
+ROU,Vehicles,-4101
+ROU,Manufacturing,-2714
+ROU,Utilities,-9482
+ROU,Construction,-3522
+ROU,Vehicle Trade,-2473
+ROU,Wholesale Trade,-9026
+ROU,Retail Trade,-8319
+ROU,Hospitality,-9679
+ROU,Inland Transport,-13635
+ROU,Water Transport,-58
+ROU,Air Transport,-792
+ROU,Transport Services,-1579
+ROU,Communications,-2603
+ROU,Financial Services,-2776
+ROU,Real Estate,-27503
+ROU,Business Services,-1483
+ROU,Public Services,-14864
+ROU,Education,-13462
+ROU,Health,-18214
+ROU,Other Services,-12711
+ROU,Private Households,0
+SVN,Agriculture,-2270
+SVN,Mining,-52
+SVN,Food,-5177
+SVN,Textiles,-1586
+SVN,Leather,-504
+SVN,Wood,-92
+SVN,Paper,-855
+SVN,Fuel,-1846
+SVN,Chemicals,-2268
+SVN,Plastics,-234
+SVN,Minerals,-145
+SVN,Metals,-551
+SVN,Machinery,-984
+SVN,Electricals,-1123
+SVN,Vehicles,-3369
+SVN,Manufacturing,-1102
+SVN,Utilities,-1769
+SVN,Construction,-405
+SVN,Vehicle Trade,-1348
+SVN,Wholesale Trade,-3082
+SVN,Retail Trade,-2211
+SVN,Hospitality,-2750
+SVN,Inland Transport,-915
+SVN,Water Transport,-19
+SVN,Air Transport,-109
+SVN,Transport Services,-1754
+SVN,Communications,-1723
+SVN,Financial Services,-2262
+SVN,Real Estate,-4187
+SVN,Business Services,-1143
+SVN,Public Services,-6150
+SVN,Education,-3994
+SVN,Health,-5269
+SVN,Other Services,-3915
+SVN,Private Households,-33
+FRA,Agriculture,-79812
+FRA,Mining,-315
+FRA,Food,-286049
+FRA,Textiles,-52101
+FRA,Leather,-12828
+FRA,Wood,-5458
+FRA,Paper,-40910
+FRA,Fuel,-76556
+FRA,Chemicals,-124875
+FRA,Plastics,-22267
+FRA,Minerals,-8730
+FRA,Metals,-16504
+FRA,Machinery,-31710
+FRA,Electricals,-65843
+FRA,Vehicles,-185166
+FRA,Manufacturing,-51620
+FRA,Utilities,-90419
+FRA,Construction,-33951
+FRA,Vehicle Trade,-73943
+FRA,Wholesale Trade,-182050
+FRA,Retail Trade,-127580
+FRA,Hospitality,-179770
+FRA,Inland Transport,-83749
+FRA,Water Transport,-4621
+FRA,Air Transport,-13557
+FRA,Transport Services,-24694
+FRA,Communications,-67615
+FRA,Financial Services,-155342
+FRA,Real Estate,-389204
+FRA,Business Services,-64826
+FRA,Public Services,-366101
+FRA,Education,-192758
+FRA,Health,-400752
+FRA,Other Services,-199016
+FRA,Private Households,-13836
+EST,Agriculture,-674
+EST,Mining,-35
+EST,Food,-3741
+EST,Textiles,-865
+EST,Leather,-234
+EST,Wood,-86
+EST,Paper,-391
+EST,Fuel,-541
+EST,Chemicals,-964
+EST,Plastics,-186
+EST,Minerals,-138
+EST,Metals,-166
+EST,Machinery,-434
+EST,Electricals,-689
+EST,Vehicles,-688
+EST,Manufacturing,-354
+EST,Utilities,-960
+EST,Construction,-283
+EST,Vehicle Trade,-451
+EST,Wholesale Trade,-1402
+EST,Retail Trade,-950
+EST,Hospitality,-1443
+EST,Inland Transport,-1255
+EST,Water Transport,-84
+EST,Air Transport,-31
+EST,Transport Services,-209
+EST,Communications,-468
+EST,Financial Services,-611
+EST,Real Estate,-2220
+EST,Business Services,-469
+EST,Public Services,-3159
+EST,Education,-1986
+EST,Health,-2018
+EST,Other Services,-1940
+EST,Private Households,0
+SVK,Agriculture,-5646
+SVK,Mining,-175
+SVK,Food,-10242
+SVK,Textiles,-2143
+SVK,Leather,-608
+SVK,Wood,-546
+SVK,Paper,-2112
+SVK,Fuel,-2512
+SVK,Chemicals,-4546
+SVK,Plastics,-1593
+SVK,Minerals,-625
+SVK,Metals,-1393
+SVK,Machinery,-1473
+SVK,Electricals,-5703
+SVK,Vehicles,-3221
+SVK,Manufacturing,-2329
+SVK,Utilities,-11538
+SVK,Construction,-1665
+SVK,Vehicle Trade,-1743
+SVK,Wholesale Trade,-6740
+SVK,Retail Trade,-5275
+SVK,Hospitality,-2283
+SVK,Inland Transport,-3295
+SVK,Water Transport,-45
+SVK,Air Transport,-250
+SVK,Transport Services,-2003
+SVK,Communications,-2665
+SVK,Financial Services,-5358
+SVK,Real Estate,-5679
+SVK,Business Services,-1938
+SVK,Public Services,-12674
+SVK,Education,-4740
+SVK,Health,-6225
+SVK,Other Services,-5149
+SVK,Private Households,0
+LTU,Agriculture,-3964
+LTU,Mining,-120
+LTU,Food,-10472
+LTU,Textiles,-2094
+LTU,Leather,-804
+LTU,Wood,-318
+LTU,Paper,-493
+LTU,Fuel,-7907
+LTU,Chemicals,-1865
+LTU,Plastics,-529
+LTU,Minerals,-462
+LTU,Metals,-471
+LTU,Machinery,-752
+LTU,Electricals,-782
+LTU,Vehicles,-1413
+LTU,Manufacturing,-779
+LTU,Utilities,-1704
+LTU,Construction,-435
+LTU,Vehicle Trade,-1004
+LTU,Wholesale Trade,-2240
+LTU,Retail Trade,-1698
+LTU,Hospitality,-985
+LTU,Inland Transport,-1595
+LTU,Water Transport,-40
+LTU,Air Transport,-351
+LTU,Transport Services,-538
+LTU,Communications,-839
+LTU,Financial Services,-1028
+LTU,Real Estate,-4615
+LTU,Business Services,-738
+LTU,Public Services,-6400
+LTU,Education,-3403
+LTU,Health,-3332
+LTU,Other Services,-2103
+LTU,Private Households,-41
+ESP,Agriculture,-41014
+ESP,Mining,-281
+ESP,Food,-187983
+ESP,Textiles,-39967
+ESP,Leather,-15816
+ESP,Wood,-2486
+ESP,Paper,-24193
+ESP,Fuel,-37481
+ESP,Chemicals,-64581
+ESP,Plastics,-6536
+ESP,Minerals,-4600
+ESP,Metals,-9596
+ESP,Machinery,-19962
+ESP,Electricals,-27738
+ESP,Vehicles,-71885
+ESP,Manufacturing,-34018
+ESP,Utilities,-42003
+ESP,Construction,-36123
+ESP,Vehicle Trade,-56404
+ESP,Wholesale Trade,-65898
+ESP,Retail Trade,-71878
+ESP,Hospitality,-299305
+ESP,Inland Transport,-35214
+ESP,Water Transport,-2027
+ESP,Air Transport,-10744
+ESP,Transport Services,-33124
+ESP,Communications,-40526
+ESP,Financial Services,-66414
+ESP,Real Estate,-154246
+ESP,Business Services,-27367
+ESP,Public Services,-186167
+ESP,Education,-96675
+ESP,Health,-199338
+ESP,Other Services,-139447
+ESP,Private Households,0
+TWN,Agriculture,-14775
+TWN,Mining,-3
+TWN,Food,-30420
+TWN,Textiles,-2900
+TWN,Leather,-742
+TWN,Wood,-70
+TWN,Paper,-3477
+TWN,Fuel,-8775
+TWN,Chemicals,-9648
+TWN,Plastics,-1982
+TWN,Minerals,-581
+TWN,Metals,-2809
+TWN,Machinery,-6715
+TWN,Electricals,-10042
+TWN,Vehicles,-9703
+TWN,Manufacturing,-2045
+TWN,Utilities,-6693
+TWN,Construction,-432
+TWN,Vehicle Trade,-3728
+TWN,Wholesale Trade,-19838
+TWN,Retail Trade,-27697
+TWN,Hospitality,-11771
+TWN,Inland Transport,-6061
+TWN,Water Transport,-391
+TWN,Air Transport,-7229
+TWN,Transport Services,-2682
+TWN,Communications,-10057
+TWN,Financial Services,-29982
+TWN,Real Estate,-177
+TWN,Business Services,-2646
+TWN,Public Services,-64118
+TWN,Education,-12655
+TWN,Health,-30777
+TWN,Other Services,-51183
+TWN,Private Households,-3176
+CHN,Agriculture,-375472
+CHN,Mining,-2570
+CHN,Food,-712413
+CHN,Textiles,-161005
+CHN,Leather,-77388
+CHN,Wood,-5830
+CHN,Paper,-3278
+CHN,Fuel,-9398
+CHN,Chemicals,-57044
+CHN,Plastics,-20465
+CHN,Minerals,-6106
+CHN,Metals,-14166
+CHN,Machinery,-6367
+CHN,Electricals,-119163
+CHN,Vehicles,-94526
+CHN,Manufacturing,-7299
+CHN,Utilities,-51772
+CHN,Construction,-37314
+CHN,Vehicle Trade,-69
+CHN,Wholesale Trade,-197266
+CHN,Retail Trade,-41622
+CHN,Hospitality,-191538
+CHN,Inland Transport,-60201
+CHN,Water Transport,-6895
+CHN,Air Transport,-3872
+CHN,Transport Services,-30674
+CHN,Communications,-79333
+CHN,Financial Services,-100507
+CHN,Real Estate,-152910
+CHN,Business Services,-98611
+CHN,Public Services,-592093
+CHN,Education,-424130
+CHN,Health,-480548
+CHN,Other Services,-201350
+CHN,Private Households,0
+AUS,Agriculture,-17634
+AUS,Mining,-3105
+AUS,Food,-86566
+AUS,Textiles,-19950
+AUS,Leather,-2102
+AUS,Wood,-837
+AUS,Paper,-15995
+AUS,Fuel,-17720
+AUS,Chemicals,-27193
+AUS,Plastics,-5582
+AUS,Minerals,-3384
+AUS,Metals,-7014
+AUS,Machinery,-9372
+AUS,Electricals,-12147
+AUS,Vehicles,-32035
+AUS,Manufacturing,-17267
+AUS,Utilities,-28008
+AUS,Construction,-11790
+AUS,Vehicle Trade,-33101
+AUS,Wholesale Trade,-83000
+AUS,Retail Trade,-50697
+AUS,Hospitality,-61302
+AUS,Inland Transport,-24274
+AUS,Water Transport,-932
+AUS,Air Transport,-11134
+AUS,Transport Services,-14837
+AUS,Communications,-24307
+AUS,Financial Services,-71108
+AUS,Real Estate,-127977
+AUS,Business Services,-21243
+AUS,Public Services,-120385
+AUS,Education,-64635
+AUS,Health,-113179
+AUS,Other Services,-94498
+AUS,Private Households,0
+LVA,Agriculture,-2911
+LVA,Mining,-174
+LVA,Food,-5673
+LVA,Textiles,-1116
+LVA,Leather,-246
+LVA,Wood,-396
+LVA,Paper,-342
+LVA,Fuel,-289
+LVA,Chemicals,-703
+LVA,Plastics,-119
+LVA,Minerals,-78
+LVA,Metals,-182
+LVA,Machinery,-207
+LVA,Electricals,-163
+LVA,Vehicles,-538
+LVA,Manufacturing,-424
+LVA,Utilities,-2418
+LVA,Construction,-606
+LVA,Vehicle Trade,-845
+LVA,Wholesale Trade,-2638
+LVA,Retail Trade,-1836
+LVA,Hospitality,-1686
+LVA,Inland Transport,-1634
+LVA,Water Transport,-2
+LVA,Air Transport,-250
+LVA,Transport Services,-123
+LVA,Communications,-544
+LVA,Financial Services,-1767
+LVA,Real Estate,-4062
+LVA,Business Services,-316
+LVA,Public Services,-5513
+LVA,Education,-2617
+LVA,Health,-2209
+LVA,Other Services,-3615
+LVA,Private Households,0
+IRL,Agriculture,-5164
+IRL,Mining,-535
+IRL,Food,-17518
+IRL,Textiles,-4969
+IRL,Leather,-781
+IRL,Wood,-308
+IRL,Paper,-8150
+IRL,Fuel,-5399
+IRL,Chemicals,-9961
+IRL,Plastics,-2029
+IRL,Minerals,-577
+IRL,Metals,-1284
+IRL,Machinery,-1517
+IRL,Electricals,-5286
+IRL,Vehicles,-7190
+IRL,Manufacturing,-2540
+IRL,Utilities,-5074
+IRL,Construction,-787
+IRL,Vehicle Trade,-2850
+IRL,Wholesale Trade,-8420
+IRL,Retail Trade,-11653
+IRL,Hospitality,-10837
+IRL,Inland Transport,-5800
+IRL,Water Transport,-349
+IRL,Air Transport,-2024
+IRL,Transport Services,-4687
+IRL,Communications,-7337
+IRL,Financial Services,-7781
+IRL,Real Estate,-40480
+IRL,Business Services,-2252
+IRL,Public Services,-23087
+IRL,Education,-17513
+IRL,Health,-45903
+IRL,Other Services,-11282
+IRL,Private Households,-290
+DNK,Agriculture,-7780
+DNK,Mining,-148
+DNK,Food,-24050
+DNK,Textiles,-3939
+DNK,Leather,-956
+DNK,Wood,-648
+DNK,Paper,-4813
+DNK,Fuel,-9242
+DNK,Chemicals,-6110
+DNK,Plastics,-1467
+DNK,Minerals,-884
+DNK,Metals,-1612
+DNK,Machinery,-3078
+DNK,Electricals,-7055
+DNK,Vehicles,-8554
+DNK,Manufacturing,-3993
+DNK,Utilities,-8674
+DNK,Construction,-4338
+DNK,Vehicle Trade,-7289
+DNK,Wholesale Trade,-21747
+DNK,Retail Trade,-10887
+DNK,Hospitality,-13103
+DNK,Inland Transport,-2951
+DNK,Water Transport,-271
+DNK,Air Transport,-175
+DNK,Transport Services,-1189
+DNK,Communications,-4505
+DNK,Financial Services,-17712
+DNK,Real Estate,-47476
+DNK,Business Services,-5819
+DNK,Public Services,-38919
+DNK,Education,-29648
+DNK,Health,-66399
+DNK,Other Services,-19261
+DNK,Private Households,-438
+MLT,Agriculture,-575
+MLT,Mining,-3
+MLT,Food,-1565
+MLT,Textiles,-366
+MLT,Leather,-86
+MLT,Wood,-59
+MLT,Paper,-142
+MLT,Fuel,-126
+MLT,Chemicals,-348
+MLT,Plastics,-10
+MLT,Minerals,-106
+MLT,Metals,-270
+MLT,Machinery,-77
+MLT,Electricals,-338
+MLT,Vehicles,-707
+MLT,Manufacturing,-324
+MLT,Utilities,-288
+MLT,Construction,-135
+MLT,Vehicle Trade,-159
+MLT,Wholesale Trade,-468
+MLT,Retail Trade,-286
+MLT,Hospitality,-318
+MLT,Inland Transport,-64
+MLT,Water Transport,-10
+MLT,Air Transport,-25
+MLT,Transport Services,-112
+MLT,Communications,-262
+MLT,Financial Services,-246
+MLT,Real Estate,-730
+MLT,Business Services,-40
+MLT,Public Services,-1015
+MLT,Education,-509
+MLT,Health,-937
+MLT,Other Services,-2214
+MLT,Private Households,-23
+FIN,Agriculture,-5716
+FIN,Mining,-57
+FIN,Food,-24180
+FIN,Textiles,-4956
+FIN,Leather,-1007
+FIN,Wood,-230
+FIN,Paper,-6227
+FIN,Fuel,-7260
+FIN,Chemicals,-7932
+FIN,Plastics,-1366
+FIN,Minerals,-726
+FIN,Metals,-1584
+FIN,Machinery,-4212
+FIN,Electricals,-8120
+FIN,Vehicles,-7532
+FIN,Manufacturing,-4215
+FIN,Utilities,-4538
+FIN,Construction,-1182
+FIN,Vehicle Trade,-5586
+FIN,Wholesale Trade,-14060
+FIN,Retail Trade,-9467
+FIN,Hospitality,-11863
+FIN,Inland Transport,-4447
+FIN,Water Transport,-1764
+FIN,Air Transport,-1756
+FIN,Transport Services,-9847
+FIN,Communications,-5480
+FIN,Financial Services,-8594
+FIN,Real Estate,-40493
+FIN,Business Services,-4646
+FIN,Public Services,-31468
+FIN,Education,-21327
+FIN,Health,-45188
+FIN,Other Services,-20433
+FIN,Private Households,-186
+RoW,Agriculture,-124141865683
+RoW,Mining,-178737204399
+RoW,Food,-298994089915
+RoW,Textiles,-305340436537
+RoW,Leather,-76361789938
+RoW,Wood,-24713043450
+RoW,Paper,-103736010531
+RoW,Fuel,-219748082378
+RoW,Chemicals,-567352062882
+RoW,Plastics,-146714681417
+RoW,Minerals,-77007227698
+RoW,Metals,-533296241722
+RoW,Machinery,-612253254048
+RoW,Electricals,-797364578309
+RoW,Vehicles,-740738141824
+RoW,Manufacturing,-199858870719
+RoW,Utilities,-458494602523
+RoW,Construction,-231467382573
+RoW,Vehicle Trade,-203598537220
+RoW,Wholesale Trade,-192710890814
+RoW,Retail Trade,-361750165640
+RoW,Hospitality,-2460642211741
+RoW,Inland Transport,-204761662672
+RoW,Water Transport,-224495862031
+RoW,Air Transport,-211593627171
+RoW,Transport Services,0
+RoW,Communications,-236824492606
+RoW,Financial Services,-967651313971
+RoW,Real Estate,-74779170039
+RoW,Business Services,-2000923702219
+RoW,Public Services,-157708329553
+RoW,Education,-9064615806
+RoW,Health,-10863855894
+RoW,Other Services,-1605105893870
+RoW,Private Households,-5732264797
+JPN,Agriculture,-71779
+JPN,Mining,-275
+JPN,Food,-559495
+JPN,Textiles,-84421
+JPN,Leather,-23963
+JPN,Wood,-5326
+JPN,Paper,-12264
+JPN,Fuel,-115989
+JPN,Chemicals,-81070
+JPN,Plastics,-17520
+JPN,Minerals,-5892
+JPN,Metals,-20389
+JPN,Machinery,-82336
+JPN,Electricals,-80645
+JPN,Vehicles,-132244
+JPN,Manufacturing,-25203
+JPN,Utilities,-142080
+JPN,Construction,-58
+JPN,Vehicle Trade,-68166
+JPN,Wholesale Trade,-273697
+JPN,Retail Trade,-354217
+JPN,Hospitality,-402567
+JPN,Inland Transport,-143297
+JPN,Water Transport,-8285
+JPN,Air Transport,-36248
+JPN,Transport Services,-17191
+JPN,Communications,-130732
+JPN,Financial Services,-211016
+JPN,Real Estate,-721020
+JPN,Business Services,-70338
+JPN,Public Services,-852636
+JPN,Education,-264518
+JPN,Health,-731109
+JPN,Other Services,-403139
+JPN,Private Households,0
+TUR,Agriculture,-60760
+TUR,Mining,-5262
+TUR,Food,-139401
+TUR,Textiles,-94398
+TUR,Leather,-8424
+TUR,Wood,-2114
+TUR,Paper,-8904
+TUR,Fuel,-11908
+TUR,Chemicals,-28397
+TUR,Plastics,-6945
+TUR,Minerals,-2547
+TUR,Metals,-2698
+TUR,Machinery,-7814
+TUR,Electricals,-14813
+TUR,Vehicles,-8809
+TUR,Manufacturing,-18307
+TUR,Utilities,-22317
+TUR,Construction,-1199
+TUR,Vehicle Trade,-15181
+TUR,Wholesale Trade,-27172
+TUR,Retail Trade,-24719
+TUR,Hospitality,-60516
+TUR,Inland Transport,-94444
+TUR,Water Transport,-4073
+TUR,Air Transport,-12999
+TUR,Transport Services,-12908
+TUR,Communications,-26674
+TUR,Financial Services,-19862
+TUR,Real Estate,-103367
+TUR,Business Services,-10975
+TUR,Public Services,-78446
+TUR,Education,-34181
+TUR,Health,-38785
+TUR,Other Services,-27464
+TUR,Private Households,-1302
+ITA,Agriculture,-59803
+ITA,Mining,-297
+ITA,Food,-265079
+ITA,Textiles,-112766
+ITA,Leather,-38209
+ITA,Wood,-7860
+ITA,Paper,-44748
+ITA,Fuel,-54757
+ITA,Chemicals,-88660
+ITA,Plastics,-20672
+ITA,Minerals,-11015
+ITA,Metals,-19395
+ITA,Machinery,-33437
+ITA,Electricals,-40282
+ITA,Vehicles,-97916
+ITA,Manufacturing,-54679
+ITA,Utilities,-84787
+ITA,Construction,-27211
+ITA,Vehicle Trade,-122638
+ITA,Wholesale Trade,-133292
+ITA,Retail Trade,-142879
+ITA,Hospitality,-250105
+ITA,Inland Transport,-90532
+ITA,Water Transport,-12533
+ITA,Air Transport,-15772
+ITA,Transport Services,-44407
+ITA,Communications,-51246
+ITA,Financial Services,-100922
+ITA,Real Estate,-226360
+ITA,Business Services,-47365
+ITA,Public Services,-277888
+ITA,Education,-125187
+ITA,Health,-290346
+ITA,Other Services,-125967
+ITA,Private Households,-21541
+AUT,Agriculture,-9356
+AUT,Mining,-179
+AUT,Food,-36509
+AUT,Textiles,-9353
+AUT,Leather,-2469
+AUT,Wood,-1662
+AUT,Paper,-6189
+AUT,Fuel,-9614
+AUT,Chemicals,-11948
+AUT,Plastics,-2278
+AUT,Minerals,-1231
+AUT,Metals,-2974
+AUT,Machinery,-6169
+AUT,Electricals,-8476
+AUT,Vehicles,-11285
+AUT,Manufacturing,-10220
+AUT,Utilities,-17022
+AUT,Construction,-5737
+AUT,Vehicle Trade,-11271
+AUT,Wholesale Trade,-21515
+AUT,Retail Trade,-16152
+AUT,Hospitality,-33464
+AUT,Inland Transport,-9788
+AUT,Water Transport,-102
+AUT,Air Transport,-3752
+AUT,Transport Services,-10025
+AUT,Communications,-7819
+AUT,Financial Services,-16090
+AUT,Real Estate,-48261
+AUT,Business Services,-6230
+AUT,Public Services,-48465
+AUT,Education,-28573
+AUT,Health,-52464
+AUT,Other Services,-25077
+AUT,Private Households,-128
+IND,Agriculture,-217084
+IND,Mining,-335
+IND,Food,-209356
+IND,Textiles,-99038
+IND,Leather,-8012
+IND,Wood,-1028
+IND,Paper,-12987
+IND,Fuel,-41200
+IND,Chemicals,-34513
+IND,Plastics,-10028
+IND,Minerals,-1565
+IND,Metals,-10990
+IND,Machinery,-16966
+IND,Electricals,-17713
+IND,Vehicles,-20683
+IND,Manufacturing,-14340
+IND,Utilities,-22199
+IND,Construction,-21674
+IND,Vehicle Trade,-3629
+IND,Wholesale Trade,-28170
+IND,Retail Trade,-46493
+IND,Hospitality,-64325
+IND,Inland Transport,-145103
+IND,Water Transport,-2354
+IND,Air Transport,-2261
+IND,Transport Services,-4239
+IND,Communications,-10170
+IND,Financial Services,-26057
+IND,Real Estate,-83892
+IND,Business Services,-33183
+IND,Public Services,-72000
+IND,Education,-63893
+IND,Health,-49306
+IND,Other Services,-19208
+IND,Private Households,-1440
+RUS,Agriculture,-126659
+RUS,Mining,-1026
+RUS,Food,-226681
+RUS,Textiles,-87867
+RUS,Leather,-31353
+RUS,Wood,-1300
+RUS,Paper,-9242
+RUS,Fuel,-19663
+RUS,Chemicals,-28118
+RUS,Plastics,-8732
+RUS,Minerals,-7586
+RUS,Metals,-14728
+RUS,Machinery,-30856
+RUS,Electricals,-10790
+RUS,Vehicles,-131081
+RUS,Manufacturing,-17528
+RUS,Utilities,-31636
+RUS,Construction,-7087
+RUS,Vehicle Trade,-24116
+RUS,Wholesale Trade,-146043
+RUS,Retail Trade,-79966
+RUS,Hospitality,-37803
+RUS,Inland Transport,-36084
+RUS,Water Transport,-2734
+RUS,Air Transport,-15890
+RUS,Transport Services,-32654
+RUS,Communications,-24902
+RUS,Financial Services,-98290
+RUS,Real Estate,-76813
+RUS,Business Services,-67530
+RUS,Public Services,-200871
+RUS,Education,-84513
+RUS,Health,-131669
+RUS,Other Services,-48083
+RUS,Private Households,0
+CZE,Agriculture,-7989
+CZE,Mining,-850
+CZE,Food,-33346
+CZE,Textiles,-5671
+CZE,Leather,-1865
+CZE,Wood,-320
+CZE,Paper,-3502
+CZE,Fuel,-4940
+CZE,Chemicals,-9947
+CZE,Plastics,-1728
+CZE,Minerals,-1144
+CZE,Metals,-1926
+CZE,Machinery,-3682
+CZE,Electricals,-7023
+CZE,Vehicles,-10341
+CZE,Manufacturing,-4986
+CZE,Utilities,-18773
+CZE,Construction,-1766
+CZE,Vehicle Trade,-3540
+CZE,Wholesale Trade,-10858
+CZE,Retail Trade,-8254
+CZE,Hospitality,-8773
+CZE,Inland Transport,-7643
+CZE,Water Transport,-18
+CZE,Air Transport,-712
+CZE,Transport Services,-16662
+CZE,Communications,-5826
+CZE,Financial Services,-11012
+CZE,Real Estate,-28365
+CZE,Business Services,-4151
+CZE,Public Services,-24408
+CZE,Education,-14668
+CZE,Health,-23328
+CZE,Other Services,-17939
+CZE,Private Households,-25
+MEX,Agriculture,-45116
+MEX,Mining,-515
+MEX,Food,-214183
+MEX,Textiles,-16022
+MEX,Leather,-7530
+MEX,Wood,-1673
+MEX,Paper,-8741
+MEX,Fuel,-60939
+MEX,Chemicals,-51440
+MEX,Plastics,-6366
+MEX,Minerals,-7622
+MEX,Metals,-13783
+MEX,Machinery,-2929
+MEX,Electricals,-23855
+MEX,Vehicles,-57760
+MEX,Manufacturing,-10811
+MEX,Utilities,-34324
+MEX,Construction,-329
+MEX,Vehicle Trade,-10588
+MEX,Wholesale Trade,-76013
+MEX,Retail Trade,-65543
+MEX,Hospitality,-43744
+MEX,Inland Transport,-93796
+MEX,Water Transport,-837
+MEX,Air Transport,-11165
+MEX,Transport Services,-8109
+MEX,Communications,-43518
+MEX,Financial Services,-29722
+MEX,Real Estate,-101067
+MEX,Business Services,-31268
+MEX,Public Services,-82940
+MEX,Education,-65650
+MEX,Health,-58792
+MEX,Other Services,-31102
+MEX,Private Households,-4846
+BRA,Agriculture,-60685
+BRA,Mining,-789
+BRA,Food,-242645
+BRA,Textiles,-52744
+BRA,Leather,-19517
+BRA,Wood,-868
+BRA,Paper,-21240
+BRA,Fuel,-63802
+BRA,Chemicals,-91741
+BRA,Plastics,-5769
+BRA,Minerals,-1767
+BRA,Metals,-4931
+BRA,Machinery,-25139
+BRA,Electricals,-34033
+BRA,Vehicles,-90316
+BRA,Manufacturing,-28698
+BRA,Utilities,-50423
+BRA,Construction,-1136
+BRA,Vehicle Trade,-14114
+BRA,Wholesale Trade,-45736
+BRA,Retail Trade,-69143
+BRA,Hospitality,-87630
+BRA,Inland Transport,-55443
+BRA,Water Transport,-3100
+BRA,Air Transport,-5010
+BRA,Transport Services,-26217
+BRA,Communications,-44774
+BRA,Financial Services,-100185
+BRA,Real Estate,-104312
+BRA,Business Services,-97790
+BRA,Public Services,-327473
+BRA,Education,-135396
+BRA,Health,-158306
+BRA,Other Services,-55551
+BRA,Private Households,0
+GRC,Agriculture,-19945
+GRC,Mining,-34
+GRC,Food,-47349
+GRC,Textiles,-15716
+GRC,Leather,-5021
+GRC,Wood,-473
+GRC,Paper,-8236
+GRC,Fuel,-13788
+GRC,Chemicals,-10853
+GRC,Plastics,-3115
+GRC,Minerals,-1531
+GRC,Metals,-5641
+GRC,Machinery,-2967
+GRC,Electricals,-2144
+GRC,Vehicles,-13519
+GRC,Manufacturing,-6185
+GRC,Utilities,-5801
+GRC,Construction,-3116
+GRC,Vehicle Trade,-8208
+GRC,Wholesale Trade,-27833
+GRC,Retail Trade,-17040
+GRC,Hospitality,-55430
+GRC,Inland Transport,-7601
+GRC,Water Transport,-6
+GRC,Air Transport,-1914
+GRC,Transport Services,-1321
+GRC,Communications,-3587
+GRC,Financial Services,-9825
+GRC,Real Estate,-31834
+GRC,Business Services,-4209
+GRC,Public Services,-58694
+GRC,Education,-24270
+GRC,Health,-35339
+GRC,Other Services,-28915
+GRC,Private Households,-2762
