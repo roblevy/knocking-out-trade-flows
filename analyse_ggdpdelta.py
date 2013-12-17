@@ -72,21 +72,35 @@ print pd.DataFrame(dggo).head(10).reset_index().to_latex(index=False)
 from matplotlib.artist import setp
 import matplotlib.pyplot as plt
 from numpy import linspace
-d['pos'] = d.dggo > 0
-d['ldggo'] = np.log10(d[d.pos]['dggo'])
-d['ldggo'][~d.pos] = np.log10(-d[~d.pos]['dggo'])
-g = d.groupby('pos')
-d['rank'] = g['ldggo'].transform(pd.Series.rank)
-d['n'] = g['ldggo'].transform(len)
-d['p'] = d['rank'] / d.n
-
+group_var = 'sector'
+e = d.reset_index()
+e['pos'] = e.dggo > 0
+e['ldggo'] = np.log10(e[e.pos]['dggo'])
+e['ldggo'][~e.pos] = np.log10(-e[~e.pos]['dggo'])
+g = e.groupby(['pos',group_var])
+e['rank'] = g['ldggo'].transform(pd.Series.rank)
+e['n'] = g['ldggo'].transform(len)
+e['p'] = e['rank'] / e.n
+e[group_var + '_number'] = pd.factorize(e[group_var])[0]
 plt.figure()
-pos = d[d.pos].sort(['dggo'])
-plt.suptitle('positive dggo log cum dist')
-for s in pos.index.levels[0].values:
-    plt.plot(pos.ix[s].ldggo, pos.ix[s]['p'])
-plt.plot(pos.ldggo, pos.ix[s]['p'], 'r')
-
+e = e.sort([group_var, 'dggo'])
+pos = e[e.pos]
+#for s in pos.index.levels[0].values:
+#    plt.plot(pos.ix[s].ldggo, pos.ix[s]['p'])
+cm = plt.cm.Paired
+#g = pos.groupby(group_var)
+g = pos.groupby(group_var)
+plt.gca().set_color_cycle([cm(i) for i in np.linspace(0, 0.9, g.ngroups)])
+#plt.scatter(pos.ldggo, pos['p'], 
+#            c=pos.from_country_number, cmap=cm,
+#            alpha=0.7, lw=0)
+for key, group in g:
+    plt.plot(group.ldggo, group.p, alpha=0.6, lw=3)
+    
+plt.legend(g.groups.keys(), ncol=2, loc='lower right')    
+plt.title('$log_{10}(dggo > 0)$ cum dist by ' + group_var)
+#%%
+# Negative empirical cumulative distribution function
 plt.figure()
 neg = d[~d.pos].sort(['ldggo'])
 plt.suptitle('negative dggo log cum dist')
