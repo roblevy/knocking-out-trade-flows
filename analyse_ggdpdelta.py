@@ -51,11 +51,11 @@ pdggo = d.pdggo.dropna()
 #%%
 # Top ten
 print "Top 10 pdggo (positive):"
-pdggo.sort()
+pdggo[pdggo > 0].sort(ascending=False)
 print pd.DataFrame(pdggo).head(10).reset_index().to_latex(index=False)
 
 print "Top 10 pdggo (negative)"
-pdggo.sort(ascending=False)
+pdggo.sort()
 print pd.DataFrame(pdggo).head(10).reset_index().to_latex(index=False)
 
 print "Top 10 dggo (positive)"
@@ -110,25 +110,56 @@ plt.plot(neg.ldggo, neg.p, 'g')
 
 #%%
 # Scatter plot flow_value against $Delta$GDP
-# on a log-log scale
+# on a log-log scale (Rainbow plots)
 plt.figure()
-sectors = d.index.get_level_values(0).values
-d['sector_number'] = pd.factorize(sectors)[0]
+sectors = e['sector'].values
+e['sector_number'] = pd.factorize(sectors)[0]
 cm = plt.cm.get_cmap('RdYlBu')
-plt.scatter(d.ldggo, np.log10(d.flow_value), 
-            c=d.sector_number, vmin=0, vmax=34, cmap=cm,
+plt.scatter(e.ldggo, np.log10(e.flow_value), 
+            c=e.sector_number, vmin=0, vmax=34, cmap=cm,
             alpha=0.7, lw=0, s=5)
 plt.suptitle(r'flow value (\$) versus $\Delta GGO$ (log-log scale)')
 plt.xlabel(r'$log_{10}(flow value)$')
 plt.ylabel(r'$log_{10}(\Delta GGO)$')
+#%%
+# ...and sector by sector:
+f, axarr = plt.subplots(5, 7, True, True)
+for i, s in enumerate(model.sectors):
+    g = e[e.sector == s]
+    ax = axarr[i // 7][i % 7]
+    ax.scatter(g.ldggo, np.log10(g.flow_value),
+               c=g.sector_number, vmin=0, vmax=33, cmap=cm,
+               alpha=0.7, lw=0, s=5)
+    ax.set_title(s)
+    ax.set_ylim([2, 11])
+    ax.set_xlim([-2, 10])
+plt.suptitle(r'flow value (\$) versus $\Delta GGO$ (log-log scale) by sector')
+
+#%%
+# Scatter plot flow_value against $Delta$GDP
+# on a normal scale (Rainbow plots)
 plt.figure()
-plt.scatter(d.dggo, d.flow_value, 
-            c=d.sector_number, vmin=0, vmax=34, cmap=cm,
+plt.scatter(e.dggo, e.flow_value, 
+            c=e.sector_number, vmin=0, vmax=34, cmap=cm,
             alpha=0.7, lw=0, s=20)
 plt.suptitle('flow value (\$) versus $\Delta GGO$')
 
 #%%
-# Plot
+# ... and sector-by-sector
+f, axarr = plt.subplots(5, 7, True, True)
+for i, s in enumerate(model.sectors):
+    g = e[e.sector == s]
+    ax = axarr[i // 7][i % 7]
+    ax.scatter(g.dggo, g.flow_value,
+               c=g.sector_number, vmin=0, vmax=33, cmap=cm,
+               alpha=0.7, lw=0, s=5)
+    ax.set_title(s)
+    ax.set_ylim([0, 1.4e9])
+    ax.set_xlim([-3e8, 6e8])
+plt.suptitle(r'flow value (\$) versus $\Delta GGO$ by sector')
+
+#%%
+# Transparent blue box plot
 to_plot = pdggo.unstack('sector')
 
 plt.figure()

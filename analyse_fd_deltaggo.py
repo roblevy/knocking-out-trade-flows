@@ -38,7 +38,7 @@ plt.plot(x, pdf_normal(x), 'b')
 plt.suptitle('Relative $\Delta GGO$ in response to changes in final demand\n'
              'kernel density estimation (red) with a normal distribution (blue)')
 plt.xlabel(r'$\frac{\Delta GGO}{flow size}$')
-plt.show()
+
 
 #%%
 # Top 10
