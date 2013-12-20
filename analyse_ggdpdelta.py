@@ -114,6 +114,7 @@ plt.plot(neg.ldggo, neg.p, 'g')
 plt.figure()
 sectors = e['sector'].values
 e['sector_number'] = pd.factorize(sectors)[0]
+e['from_country_number'] = pd.factorize(e['from_iso3'])[0]
 cm = plt.cm.get_cmap('RdYlBu')
 plt.scatter(e.ldggo, np.log10(e.flow_value), 
             c=e.sector_number, vmin=0, vmax=34, cmap=cm,
@@ -127,13 +128,41 @@ f, axarr = plt.subplots(5, 7, True, True)
 for i, s in enumerate(model.sectors):
     g = e[e.sector == s]
     ax = axarr[i // 7][i % 7]
-    ax.scatter(g.ldggo, np.log10(g.flow_value),
-               c=g.sector_number, vmin=0, vmax=33, cmap=cm,
-               alpha=0.7, lw=0, s=5)
+    markers =ax.scatter(g.ldggo, np.log10(g.flow_value),
+                        c=g.from_country_number, vmin=0, vmax=40, cmap=cm,
+                        alpha=0.7, lw=0, s=5)
     ax.set_title(s)
+    setp(markers, linewidth=0.0)
     ax.set_ylim([2, 11])
     ax.set_xlim([-2, 10])
 plt.suptitle(r'flow value (\$) versus $\Delta GGO$ (log-log scale) by sector')
+f.savefig('test.pdf')
+
+#%%
+# One sector only
+e['from_country_number'] = pd.factorize(e['from_iso3'])[0]
+h = e[e.sector=='Vehicles']
+f, axarr = plt.subplots(5, 8, True, True)
+for i, c in enumerate([c for c in model.country_names if c != 'RoW']):
+    k = h[h.from_iso3 == c]
+    print '(%i, %i)' % (i //8, i % 8)
+    ax = axarr[i // 8][i % 8]
+    markers =ax.scatter(k.ldggo, np.log10(k.flow_value),c=k.pos * 1,
+                        lw=0, s=5)
+    plt.plot(np.linspace(0,10,0.01),np.linspace(0,10,0.01), 'k')
+    ax.set_title(c)
+    ax.set_ylim([2, 11])
+    ax.set_xlim([-2, 10])
+plt.suptitle(r'Vehicles: flow value (\$) versus $\Delta GGO$ (log-log scale) by from_iso3')
+plt.xlabel(r'$log_{10}(flow value)$')
+plt.ylabel(r'$log_{10}(\Delta GGO)$')
+f.savefig('test.pdf')
+
+#%%
+# TODO: Plot Vehicles to_iso3 = USA, the line [1.0, 0.8. 0.6, etc.] for each
+#       from_iso3
+
+
 
 #%%
 # Scatter plot flow_value against $Delta$GDP
